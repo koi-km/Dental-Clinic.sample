@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+body {
+  border-top: solid 8px #6CC6C4;
+  font-family: Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4',Osaka,'ＭＳ Ｐゴシック',sans-serif;
+
+  background: #F6F6F6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* header
+---------------------- */
+
+header {
+  max-width: 920px;
+  margin: 0 auto 20px;
+  height: 130px;
+  /* background-color: yellow; */
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-top: 47px;
+}
+
+.header-right {
+  text-align: center;
+}
+
+.header-right p {
+  font-size: 10px;
+}
+
+.header-right_top {
+  margin-top: 15px;
+}
+.header-right h2 {
+  margin: 15px;
+  font-weight: normal;
+  color: #515151;
+}
+
+.fas {
+  color: #515151;
+  padding-right: 10px;
+}
+
+.header-right p {
+  display: block;
+  padding: 5px 0;
+}
+
+.flame {
+  border: 1px solid gainsboro;
+}
+
+.picup {
+  color: #B22B00;
+}
+
+/* nav
+--------------------- */
+nav {
+  max-width: 920px;
+  margin: 0 auto;
+  height: 70px;
+  
+}
+
+nav ul {
+  display: grid;
+  list-style: none;
+  border: solid 1px #6cc6c4;
+  border-radius: 6px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav ul li {
+  background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+}
+
+.item1 {
+  border-radius: 6px 0 0 6px;
+}
+
+.item5 {
+  border-radius: 0 6px 6px 0;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 17px 0;
+  
+}
+
+nav ul li a.first {
+  border-radius: 6px 0 0 6px;
+}
+
+nav ul li a:hover {
+  background-image: linear-gradient(rgb(108,198,196) 0%,rgb(156,227,225) 100%);
+}
+
+nav ul li a:hover .navigation-span_ja, 
+nav ul li a:hover .navigation-span_eu {
+  color: #C1FFFD;
+}
+
+nav ul li a.under {
+  border-radius: 0 6px 6px 0;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  border-right: #71C9C7 solid 1px;
+  border-left: #99E1DF solid 1px;
+}
+
+nav ul li a span {
+  color: white;
+  display: block;
+  text-shadow: 1px 1px 2px #6CC6C4;
+}
+
+.navigation-span_ja {
+  font-size: 15px;
+}
+
+.navigation-span_eu {
+  font-size: 10px;
+}
+
+/* main
+---------------- */
+main {
+  max-width: 920px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.main-content {
+  width: 69%;
+}
+
+/* main-img */
+.main-img {
+  text-align: center;
+}
+
+.main-img img {
+  width: 100%;
+}
+
+/* new */
+.new {
+  /* border: solid 1px yellowgreen; */
+  background-color: #fff;
+  margin: 20px 0 ;
+  padding: 20px 0;
+}
+
+.new h2 {
+  border-bottom: solid 3px #6cc6c4;
+  margin: 0 auto ;
+  padding-bottom: 15px;
+  width: 95%;
+  font-weight: normal;
+}
+
+.news {
+  border-bottom:  1px dotted #999;
+  position: relative;
+  height: 65px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.news span {
+  position: absolute;
+  font-size: 13px;
+  top: 20px;
+  font-weight: bold;
+  color: #515151;
+}
+
+.news p {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  font-size: 13px;
+  color: #515151;
+  line-height: 20px;
+}
+
+/* aside */
+aside {
+  width: 29%;
+}
+
+.list {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border: solid 1px #6cc6c4;
+  border-radius: 6px 6px 0 0;
+  background-color: #fff;
+  font-size: 14px;
+  /* list-style-position: inside; */
+}
+
+.list h3 {
+  border-bottom: 1px solid #6cc6c4;
+  border-radius: 6px 6px 0 0;
+  padding: 10px;
+  background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+  color: white;
+}
+
+.list ul {
+  list-style: none;
+}
+
+.list ul li {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-bottom: solid 1px #6cc6c4;
+}
+
+.list ul li::before {
+  content: "◆　";
+  color: #6cc6c4;
+  font-size: 60%;
+  text-shadow: 0px 0px 1.5px  #6cc6c4, 0px 0px 1.5px #6cc6c4;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: #666;
+}
+
+.list1 ul li a:hover {
+  color: #6cc6c4;
+}
+
+.list2 ul li a:hover {
+  color: #AEC24C;
+}
+
+.pmtc {
+  font-weight: bold;
+}
+
+/* nav-assist
+-------------------------- */
+.nav-assist {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.nav-assist_item {
+  background-color: #6cc6c4;
+  border-radius: 6px;
+}
+
+.nav-assist_item ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-assist_item ul li {
+  margin-right: 30px;
+  line-height: 26px;
+}
+
+.nav-assist_item ul li::before {
+  content: "○ ";
+  color: white;
+  font-weight: bold;
+  font-size: 130%;
+  text-shadow: 0px 0px 1.5px white, 0px 0px 1.5px white;
+}
+
+.nav-assist_item ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-assist_item ul li a:hover {
+  text-decoration: underline;
+}
+
+.nav-assist p {
+  text-align: right;
+  padding: 15px 0;
+  color: #515151;
+}
+
+/* footer
+--------------------------- */
+.wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  color: #515151;
+  border-top: 2px solid #6cc6c4;
+}
